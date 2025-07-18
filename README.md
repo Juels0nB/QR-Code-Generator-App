@@ -1,2 +1,8 @@
-# QR Code Generator App
-📱 QR Code Generator App This is a simple and responsive QR Code Generator built with React and styled with Tailwind CSS. It allows users to input any text or URL and instantly generate a QR code.  🚀 Features Real-time QR code generation  Clean and responsive UI with Tailwind CSS  Input validation  Easy-to-use interface  Powered by qrcode.react library  📚 What I Learned How to integrate third-party libraries in React  State management using useState  Handling user input and form submissions  Styling with Tailwind CSS for a modern UI  Optional: enabling QR code download (future feature)  🛠️ Technologies React  Tailwind CSS  qrcode.react
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
