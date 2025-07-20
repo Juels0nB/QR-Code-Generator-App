@@ -17,9 +17,9 @@ function App() {
   }
 
   return (
-    <div className="w-screen h-screen bg-gray-400 flex justify-center p-6">
-      <div className="w-[500px] space-y-4">
-        <h1 className="text-4xl text-center text-slate-100 font-mono font bold drop-shadow-lg">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-400 via-slate-500 to-slate-700 p-6">
+      <div className="w-full max-w-md space-y-6">
+        <h1 className="text-4xl text-center text-white font-mono font-bold drop-shadow-lg mb-4">
           QR Code Generator
         </h1>
         <QRForm
@@ -27,7 +27,6 @@ function App() {
           setText={setText}
           handleGenerate={generateQRCode}
         />
-
         <QRDisplay qrUrl={qrUrl} />
       </div>
     </div>
