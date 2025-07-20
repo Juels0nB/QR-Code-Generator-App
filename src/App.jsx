@@ -3,7 +3,7 @@ import "./App.css";
 import QRForm from "./components/QRForm.jsx";
 import QRDisplay from "./components/QRDisplay.jsx";
 function App() {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [qrUrl, setQrUrl] = useState("");
 
   function generateQRCode() {
@@ -22,11 +22,7 @@ function App() {
         <h1 className="text-4xl text-center text-white font-mono font-bold drop-shadow-lg mb-4">
           QR Code Generator
         </h1>
-        <QRForm
-          text={text}
-          setText={setText}
-          handleGenerate={generateQRCode}
-        />
+        <QRForm text={text} setText={setText} handleGenerate={generateQRCode} />
         <QRDisplay qrUrl={qrUrl} />
       </div>
     </div>

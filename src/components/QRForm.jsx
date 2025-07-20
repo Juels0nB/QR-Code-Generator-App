@@ -1,17 +1,19 @@
-import PropTypes from 'prop-types';
-import { Sparkle } from 'lucide-react'; // Exemplo de ícone
+import PropTypes from "prop-types";
+import { Sparkle } from "lucide-react"; // Exemplo de ícone
 
-function QRForm({text, setText, handleGenerate}) {
-    function handleSubmit(e) {
-        e.preventDefault(); 
-        handleGenerate();
-    }
+function QRForm({ text, setText, handleGenerate }) {
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleGenerate();
+  }
   return (
     <div className="space-y-6 p-8 bg-white/70 rounded-2xl shadow-2xl font-mono backdrop-blur-lg border border-slate-200">
       <form className="space-y-4" onSubmit={handleSubmit}>
         <div className="flex items-center gap-2">
           <Sparkle className="text-slate-500" size={24} />
-          <span className="text-lg font-semibold text-slate-700">Gerar QR Code</span>
+          <span className="text-lg font-semibold text-slate-700">
+            Gerar QR Code
+          </span>
         </div>
         <textarea
           value={text}
@@ -21,9 +23,9 @@ function QRForm({text, setText, handleGenerate}) {
           className="w-full p-3 border border-slate-300 rounded-xl resize-none overflow-hidden focus:outline-none focus:ring-2 focus:ring-slate-400 transition"
           rows={1}
           maxLength={252}
-          onInput={e => {
-              e.target.style.height = 'auto';
-              e.target.style.height = e.target.scrollHeight + 'px';
+          onInput={(e) => {
+            e.target.style.height = "auto";
+            e.target.style.height = e.target.scrollHeight + "px";
           }}
         />
         <div className="flex justify-between items-center">
