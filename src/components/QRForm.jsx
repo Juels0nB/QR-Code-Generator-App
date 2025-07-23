@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Sparkle } from "lucide-react"; // Exemplo de ícone
+import { Sparkle } from "lucide-react"; 
 
 function QRForm({ text, setText, handleGenerate }) {
   function handleSubmit(e) {
@@ -12,14 +12,14 @@ function QRForm({ text, setText, handleGenerate }) {
         <div className="flex items-center gap-2">
           <Sparkle className="text-slate-500" size={24} />
           <span className="text-lg font-semibold text-slate-700">
-            Gerar QR Code
+            Generate QR Code
           </span>
         </div>
         <textarea
           value={text}
           required
           onChange={(e) => setText(e.target.value)}
-          placeholder="Digite texto ou URL..."
+          placeholder="Enter text or URL..."
           className="w-full p-3 border border-slate-300 rounded-xl resize-none overflow-hidden focus:outline-none focus:ring-2 focus:ring-slate-400 transition"
           rows={1}
           maxLength={252}
@@ -29,7 +29,7 @@ function QRForm({ text, setText, handleGenerate }) {
           }}
         />
         <div className="flex justify-between items-center">
-          <h3 className="text-xs text-gray-500">Max 252 caracteres</h3>
+          <h3 className="text-xs text-gray-500">Max 252 caracter</h3>
           <span className="text-xs text-slate-400">{text.length}/252</span>
         </div>
         <div className="flex justify-center">
@@ -37,7 +37,7 @@ function QRForm({ text, setText, handleGenerate }) {
             type="submit"
             className="w-full bg-gradient-to-r from-slate-500 to-slate-700 text-white py-2 rounded-xl font-bold shadow hover:scale-105 hover:from-slate-600 transition"
           >
-            Gerar QR Code
+            Generate QR Code
           </button>
         </div>
       </form>
